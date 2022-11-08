@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <androidx.drawerlayout.widget.DrawerLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:id="@+id/navigationView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:menu="@menu/navigation_drawer"-->
+<!--            >-->
+
+<!--        </com.google.android.material.navigation.NavigationView>-->
+<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <com.google.android.material.appbar.MaterialToolbar-->
+<!--            android:id="@+id/topAppBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            app:title="@string/page_title"-->
+<!--            app:menu="@menu/app_bar_top"-->
+<!--            app:navigationIcon="@drawable/ic_baseline_menu_24"-->
+<!--            style="@style/Widget.MaterialComponents.Toolbar.Primary"-->
+<!--            >-->
+<!--        </com.google.android.material.appbar.MaterialToolbar>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--    &lt;!&ndash; Note: A RecyclerView can also be used &ndash;&gt;-->
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--        &lt;!&ndash; Scrollable content &ndash;&gt;-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginBottom="?attr/actionBarSize">
+     <LinearLayout
+         android:id="@+id/linearLayout3"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="102dp"
+             android:gravity="center"
+             android:text="List Scan App"
+             android:textColor="@color/colorAccent"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <LinearLayout
+                 android:id="@+id/linearLayout2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 tools:layout_editor_absoluteY="629dp">
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/textRecycler"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+
+             </LinearLayout>
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+     </LinearLayout>
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonNavigationView"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/bottom_nav_menu"
+            android:background="@drawable/transparent_background"
+            />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:clickable="true"
+        android:onClick="openCamera"
+        android:src="@drawable/ic_baseline_photo_camera_24"
+        android:text="Open Camera"
+        app:layout_anchor="@id/bottomAppBar" >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

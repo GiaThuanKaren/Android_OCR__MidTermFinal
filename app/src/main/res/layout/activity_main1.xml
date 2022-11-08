@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/images">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_editor_absoluteY="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="ĐĂNG NHẬP"
+            android:fontFamily=""
+            android:textColorHint="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/edittextbackground"
+            android:drawableStart="@drawable/ic_baseline_mail_24"
+            android:drawablePadding="10dp"
+            android:ems="15"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittextbackground"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:ems="15"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
+        <CheckBox
+            android:id="@+id/luumatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginBottom="10dp"
+            android:linksClickable="true"
+            android:minHeight="48dp"
+            android:text="lưu mật khẩu"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border"
+            android:hint="ĐĂNG NHẬP"
+            android:textColorHint="@color/black"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="ĐĂNG KÝ"
+            android:textColorHint="@color/black" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OCRExtractText</string>
+    <string name="page_title">Image</string>
+    <string name="nagivation_drawer">Navigation Drawer</string>
+    <string name="header_title">Header title</string>
+    <string name="header_text">Header text</string>
+    <string name="day">Sun</string>
+    <string name="date">18</string>
+    <string name="month">Apr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
